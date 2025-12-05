@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haley Chadwick | Alaska Scratch Page</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <!-- Navigation to professional pages -->
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="resume.html">RESUME</a>
+        <a href="alaska.html">ALASKA PAGE</a>
+        <a href="game.html">GAME</a>
+    </nav>
+
+    <!-- Header section -->
+    <header>
+        <h1>Alaska — My Scratch Page</h1>
+
+        <a class="jump-link" href="#fun">Fun Facts About Alaska</a><br>
+        <a class="jump-link" href="#do">What You Can Do in Alaska</a><br>
+        <a class="jump-link" href="#vid">Alaskan Video</a><br>
+        <a class="jump-link" href="#tab">Live Tableau Visualization</a>
+
+    </header>
+
+    <!-- Div #1 -->
+    <div class="section" id="fun">
+        <h2>Fun Facts About Alaska</h2>
+
+        <!-- Ordered list containing an unordered list -->
+        <ol>
+            <li>Alaska has 3 million lakes
+                <ul>
+                    <li>Most are unnamed</li>
+                </ul>
+            </li>
+            <li>Alaska has more coastline than the rest of the U.S. combined
+                <ul>
+                    <li>Over 6,600 miles</li>
+                </ul>
+            </li>
+            <li>Alaska has the tallest mountain in North America
+                <ul>
+                    <li>Denali (20,310 ft)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <img src="images/kodiak_island.jpg" alt="Kodiak" class="photo">
+    </div>
+
+    <!-- Div #2 -->
+    <div class="section" id="do">
+        <h2>What You Can Do in Alaska</h2>
+
+        <!-- Unordered list containing an ordered list -->
+        <ul>
+            <li>Outdoor Adventures
+                <ol>
+                    <li>Hike Glaciers</li>
+                    <li>See the Northern Lights</li>
+                    <li>Go Whale Watching</li>
+                </ol>
+            </li>
+
+            <li>Cultural Experiences
+                <ol>
+                    <li>Visit Native Heritage museums</li>
+                    <li>Eat fresh-caught salmon</li>
+                </ol>
+            </li>
+        </ul>
+
+        <img src="images/chugach_state_park.jpg" alt="Chugach" class="photo">
+    </div>
+
+    <!-- Div #3 -->
+    <div class="section" id="vid">
+        <h2>Alaska Video</h2>
+
+        <iframe 
+            width="100%" 
+            height="450"
+            width="560" height="315"
+            src="https://www.youtube.com/embed/dAHa-6VkUQY"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Tableau Embed -->
+<div class="section" id="tab">
+    <h2>Live Tableau Visualization</h2>
+
+    <div class='tableauPlaceholder' id='viz1764878492916' style='position: relative; max-width: 900px; margin: 0 auto;'>
+        <noscript>
+            <a href='#'>
+                <img alt='Alaska: Annual Population Report (1945 - 2017)' 
+                     src='https://public.tableau.com/static/images/Al/AlaskaAnnualPopulationReport1945-2017_0/AlaskaAnnualPopulationReport1945-2017/1_rss.png' 
+                     style='border:none;' />
+            </a>
+        </noscript>
+
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='AlaskaAnnualPopulationReport1945-2017_0/AlaskaAnnualPopulationReport1945-2017' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Al/AlaskaAnnualPopulationReport1945-2017_0/AlaskaAnnualPopulationReport1945-2017/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+
+    <!-- Tableau JS API -->
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+
+    <!-- Custom sizing script -->
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1764878492916');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+
+        // Make responsive
+        vizElement.style.width = '100%';
+        vizElement.style.height = '800px'; // Adjust if needed
+
+        // Initialize Tableau viz
+        var viz = new tableau.Viz(divElement, vizElement.getElementsByTagName('param')[3].value); 
+    </script>
+</div>
+
+</body>
+</html>
